@@ -26,4 +26,13 @@ obwodk = 2 * pi * r
 polek = pi * r * r
 print("Obwód koła wynosi " + str(obwodk) + ", a pole " + str(polek) + ".")
 
+#trapez 
+a = 6
+b = 10
+c = 8
+h = 5 
+
+obwodt = a + b + (2 * c)
+polet = ((a + b)*h)/2
+print("Obwód trapezu wynosi " + str(obwodt) + ", a pole " + str(polet) + ".")
 

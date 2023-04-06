@@ -18,3 +18,12 @@ obwodp = (a * 2) + (b * 2)
 polep = a * b
 print("Obwód prostokąta wynosi " + str(obwodp) + ", a pole " + str(polep) + ".")
 
+#kolo 
+r = 5 
+pi = 3
+
+obwodk = 2 * pi * r
+polek = pi * r * r
+print("Obwód koła wynosi " + str(obwodk) + ", a pole " + str(polek) + ".")
+
+

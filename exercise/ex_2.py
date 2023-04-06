@@ -36,3 +36,11 @@ obwodt = a + b + (2 * c)
 polet = ((a + b)*h)/2
 print("Obwód trapezu wynosi " + str(obwodt) + ", a pole " + str(polet) + ".")
 
+#romb
+
+a = 10 
+h = 8
+obwodr = 4 * a
+poler = a * h
+
+print("Obwód rombu wynosi " + str(obwodr) + ", a pole " + str(poler) + ".")

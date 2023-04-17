@@ -22,3 +22,14 @@ studenci = ["Ania", "Kuba", "Piotr", "Jan"]
 liczba_studentow = len(studenci)
 print("Liczba studentów wynosi:", liczba_studentow)
 
+# zadanie 1.4
+
+studenci = ["Ania", "Kasia", "Piotr", "Tomek"]
+for student in studenci:
+    print("Hello", student)
+
+# petla for i w oczekiwanym rezultacie Hello x4 z każdym z osobna 
+
+
+
+

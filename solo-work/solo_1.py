@@ -61,5 +61,19 @@ print("Alfabetyczna lista studentow wynosi: ")
 for student in studenci:
     print(student)
 
+# zadanie 1.8
+
+# posortuj alfabetycznie (od nazwiska) studentow
+studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
+
+# split zwraca mi drugi element listy czyli nazwisko
+def nazwisko(student):
+    return student.split()[-1]
+
+studenci.sort(key=nazwisko)
+
+print("Alfabetyczna lista studentow wynosi: ")
+for student in studenci:
+    print(student)
 
 

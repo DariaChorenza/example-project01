@@ -7,6 +7,7 @@ student = "Daria"
 komunikat = "{} {}".format(hello, student)
 print(komunikat)
 
+
 # zadanie 1.2
 
 student = input("Wpisz swoje imię: ")

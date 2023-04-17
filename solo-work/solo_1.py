@@ -92,9 +92,19 @@ wykres_1 = [[2, 4], [4, 4], [6, 4]]
 wykres_2 = [[2, 3], [4, 4], [6, 5]]
 wykres_3 = [[2, 3], [4, 3], [5, 4]]
 
-wykres_1_funkcja_liniowa = True
-wykres_2_funkcja_liniowa = True
-wykres_3_funkcja_liniowa = False
+def czy_funkcja_liniowa(wykres):
+    
+    x1, y1 = wykres[0]
+    x2, y2 = wykres[1]
+    x3, y3 = wykres[2]
+    if (y2 - y1) * (x3 - x2) == (y3 - y2) * (x2 - x1):
+        return True
+    else:
+        return False
+
+wykres_1_funkcja_liniowa = czy_funkcja_liniowa(wykres_1)
+wykres_2_funkcja_liniowa = czy_funkcja_liniowa(wykres_2)
+wykres_3_funkcja_liniowa = czy_funkcja_liniowa(wykres_3)
 
 if wykres_1_funkcja_liniowa:
     print("Dla punktow w wykres_1 mozna wyznaczyc funkcje liniowa.")

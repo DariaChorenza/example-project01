@@ -76,7 +76,7 @@ print("Alfabetyczna lista studentow wynosi: ")
 for student in studenci:
     print(student)
 
-# zadanie 1.9
+# zadanie1.9
 
 studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
 

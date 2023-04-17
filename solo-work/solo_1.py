@@ -76,4 +76,38 @@ print("Alfabetyczna lista studentow wynosi: ")
 for student in studenci:
     print(student)
 
+# zadanie 1.9
 
+studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
+
+liczba_n = 0
+for student in studenci:
+    if student.split()[-1][0] == "N":
+        liczba_n += 1
+
+print("Liczba studentow na N wynosi:", liczba_n)
+
+# zadanie 1.10
+
+wykres_1 = [[2, 4], [4, 4], [6, 4]]
+wykres_2 = [[2, 3], [4, 4], [6, 5]]
+wykres_3 = [[2, 3], [4, 3], [5, 4]]
+
+wykres_1_funkcja_liniowa = True
+wykres_2_funkcja_liniowa = True
+wykres_3_funkcja_liniowa = False
+
+if wykres_1_funkcja_liniowa:
+    print("Dla punktow w wykres_1 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_1 nie mozna wyznaczyc funkcji liniowej.")
+
+if wykres_2_funkcja_liniowa:
+    print("Dla punktow w wykres_2 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_2 nie mozna wyznaczyc funkcji liniowej.")
+
+if wykres_3_funkcja_liniowa:
+    print("Dla punktow w wykres_3 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_3 nie mozna wyznaczyc funkcji liniowej.")

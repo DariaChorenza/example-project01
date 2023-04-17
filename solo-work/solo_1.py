@@ -3,7 +3,7 @@
 hello = "Hello"
 student = "Daria"
 
-# oczekiwany rezultat: Hello Ola
+
 komunikat = "{} {}".format(hello, student)
 print(komunikat)
 
@@ -17,8 +17,7 @@ print("Hello " + student)
 
 studenci = ["Ania", "Kuba", "Piotr", "Jan"]
 
-# policz liczbe studentow w tablicy studenci 
-# oczekiwany rezultat: Liczba studentow wynosi: 4
+
 liczba_studentow = len(studenci)
 print("Liczba studentów wynosi:", liczba_studentow)
 
@@ -37,7 +36,7 @@ potega = 4
 
 wynik = liczba ** potega
 
-# oczekiwany rezultat: "Wynik wynosi: 81"
+
 print("Wynik wynosi:", wynik)
 
 # zadanie 1.6
@@ -49,7 +48,7 @@ for znak in ciag_znakow:
     if znak == "(":
         liczba_nawiasow_otwierajacych += 1
 
-# oczekiwany rezultat: "Liczba nawiasow otwierajacych wynosi: 4"
+
 print("Liczba nawiasow otwierajacych wynosi: " + str(liczba_nawiasow_otwierajacych))
 
 # zadanie 1.7

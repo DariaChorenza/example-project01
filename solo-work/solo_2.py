@@ -19,4 +19,21 @@ trojkat_Darii = Trojkat(12, 10, 8, 6)
 print(trojkat_Darii.pole())
 print(trojkat_Darii.pole())
 
+#trapez 
+class Trapez:
+    def __init__ (self, a, b, c, d, h):
+        self.a = a
+        self.b = b
+        self.c = c
+        self.d = d
+        self.h = h
+
+    def obwod(self):
+        return self.a + self.b + self.c + self.d
+    def pole(self):
+        return ((self.a + self.b) * self.h)/2
+    
+trapez_darii = Trapez(6, 9, 5, 5, 2)
+print(trapez_darii.obwod())
+print(trapez_darii.pole())
 

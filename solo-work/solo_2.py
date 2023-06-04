@@ -81,27 +81,49 @@ class Klub_pilkarski:
         self.rok_zalozenia = rok_zalozenia
         self.kolor_klubu = kolor_klubu
         self.data_najblizszego_meczu = data_najblizszego_meczu 
-        self.ilosc_wygranych = ilosc_wygranych
-        self.ilosc_przegranych = ilosc_przegranych
-        self.ilosc_zawodnikow = ilosc_zawodnikow
+        self.ilosc_wygranych = int(ilosc_wygranych)
+        self.ilosc_przegranych = int(ilosc_przegranych)
+        self.ilosc_zawodnikow = int(ilosc_zawodnikow)
         self.zawodnicy = []
         self.mecze = []
+
+        for i in range(self.ilosc_zawodnikow):
+            self.zawodnicy.append(f"Zawodnik {i+1}")
     
     def __str__ (self):
         return f"{self.nazwa_klubu} {self.kapitan} {self.data_najblizszego_meczu} {self.miasto_pochodzenia}"
-
-    def __int__ (self):
-        return 8 #nie dodawać 
     
     def dodaj_zawodnika(self, zawodnik):
         self.zawodnicy.append(zawodnik)
 
-    def zwroc_akt_liczbe_zawodnikow(self):
-        return (sum(self.dodaj_zawodnika))
+    def aktualna_liczba_zawodnikow(self):
+        return len(self.zawodnicy)
 
     def dodaj_mecz(self, mecz):
         self.mecze.append(mecz)
-    
 
+    def oblicz_procent_wygranych(self):
+        if self.ilosc_wygranych == 0 and self.ilosc_przegranych == 0:
+            return 0.0
+        else:
+            procent_wygranych = (self.ilosc_wygranych / (self.ilosc_wygranych + self.ilosc_przegranych)) * 100
+            return round(procent_wygranych, 2)
 
-klub_darii = Klub_pilkarski("Lech", "Nowak", "Kowalski", "Poznan", "1990", "Niebiesko-bialy", "06.06.2023", "20", "10")
+klub_darii = Klub_pilkarski("Lech", "Nowak", "Kowalski", "Poznan", "1990", "Niebiesko-bialy", "06.06.2023", 20, 10, 25)
+print("Dane o klubie darii:")
+print(klub_darii)
+
+klub_darii.dodaj_zawodnika("Jan Kowalski")
+klub_darii.dodaj_zawodnika("Adam Nowak")
+klub_darii.dodaj_zawodnika("Piotr Malinowski")
+
+print("Aktualna liczba zawodników:", klub_darii.aktualna_liczba_zawodnikow())
+
+klub_darii.dodaj_mecz("Lech vs. Legia - 1:0")
+klub_darii.dodaj_mecz("Lech vs. Wisła - 2:2")
+
+print("Dodane mecze:")
+print(klub_darii.mecze)
+
+print("Procentowa ilośc wygranych meczy:")
+print(klub_darii.oblicz_procent_wygranych())

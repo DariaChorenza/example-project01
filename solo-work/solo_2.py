@@ -69,7 +69,7 @@ student_daria.dodaj_ocene(5)
 print(int(student_daria))
 print(student_daria.oceny)
 
-print("-------------------------------------------------")
+print("--------------------------")
 
 #Nowa klasa klub_pilkarski
 class Klub_pilkarski:

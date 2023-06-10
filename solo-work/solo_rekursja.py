@@ -78,7 +78,7 @@ print("----------------------------------------")
 
 def fibonacci(n):
     if n <= 1:               #sprawdzamy czy n jest mniejsze lub równe 1 
-        return n             #pierwsze dwa elementy ciągu Fibonacciego to 0 i 1 dlatego zwracmy n 
+        return n             #pierwsze dwa elementy ciągu Fibonacciego to 0 oraz 1 dlatego zwracmy n 
     else:
         return fibonacci(n-1) + fibonacci(n-2)       #obliczamy sumę dwóch poprzednich elementów ciągu Fibonacciego (czyli n-1 i n-2).
 
